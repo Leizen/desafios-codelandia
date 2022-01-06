@@ -45,6 +45,12 @@ export function Homepage() {
               Desafio 05 - Studio Ghibli
             </Link>
           </li>
+          <li>
+            <Link to="/desafio-06-loki">Desafio 06 - Loki</Link>
+          </li>
+          <li>
+            <Link to="/desafio-07-valorant">Desafio 07 - Valorant</Link>
+          </li>
         </ChallengesList>
       </ContentContainer>
     </Container>

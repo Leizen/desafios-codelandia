@@ -7,6 +7,8 @@ import { MainContent02 } from "./components/Desafio02 - JordanShoes/MainContent0
 import { MainContent03 } from "./components/Desafio03 - OnePage/MainContent03/MainContent03";
 import { MainContent04 } from "./components/Desafio04 - Login/MainContent04/MainContent04";
 import { MainContent05 } from "./components/Desafio05 - StudioGhibli/MainContent05/MainContent05";
+import { MainContent06 } from "./components/Desafio06 - Loki/MainContent06/MainContent06";
+import { MainContent07 } from "./components/Desafio07 - Valorant/MainContent07/MainContent07";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/desafio-03-onepage" element={<MainContent03 />} />
           <Route path="/desafio-04-login" element={<MainContent04 />} />
           <Route path="/desafio-05-studioghibli" element={<MainContent05 />} />
+          <Route path="/desafio-06-loki" element={<MainContent06 />} />
+          <Route path="/desafio-07-valorant" element={<MainContent07 />} />
         </Routes>
         <GlobalStyle />
       </Router>
