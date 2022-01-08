@@ -14,4 +14,7 @@ export const Container = styled.div`
     line-height: 33px;
     color: #FFF;
   }
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
 `

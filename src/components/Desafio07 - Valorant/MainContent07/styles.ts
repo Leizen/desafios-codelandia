@@ -22,9 +22,17 @@ export const Container = styled.div`
       rgba(15, 44, 50, 1) 120%
     ),
     url(${backgroundImg}); 
+
+    @media (max-width: 700px) { 
+      height: 100%;
+  }
 `
 
 export const ContentContainer = styled.div`
   height: 100%;
   width: 80%;
+
+  @media (max-width: 780px) { 
+    width: 100%;
+  }  
 `
