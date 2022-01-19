@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
   display: flex;
 
@@ -12,10 +13,11 @@ export const LeftContainer = styled.div`
   display: flex;
   align-items: center
   justify-content: center;
+  flex-direction: column;
   width: 50%;
   height: 100%;
 
-  padding: 10rem 0;
+  padding-top: 10rem;
   @media (max-width: 780px){
     padding: 6rem 0;
     width: 100%;
@@ -47,9 +49,9 @@ export const GameName = styled.h1`
             -webkit-text-stroke-color: #fff;
 `
 export const CharactersContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
   margin-top: 4rem;
 
   @media (max-width: 780px){
@@ -60,8 +62,8 @@ export const CharactersContainer = styled.div`
 `
 export const Character = styled.div`
   display: flex;
-  align-items: center;
-  justify-content:center;
+  align-items: left;
+  justify-content:left;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -70,6 +72,13 @@ export const Character = styled.div`
     width: 80%;
   } 
 
+`
+
+export const CharacterNameDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
   span{
       font-family: Open Sans;
       font-style: normal;
@@ -79,14 +88,29 @@ export const Character = styled.div`
       color: #FF4656;
     }
 `
+
+  export const CharacterPortraitBackground = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+    img{
+      position: absolute;
+    }
+  `
+
   export const CharacterContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     width: 174px;
     height: 174px;
     
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
     background: #FFF;
   
     @media (max-width: 780px) { 
@@ -97,7 +121,10 @@ export const Character = styled.div`
     -webkit-clip-path: polygon(10% 0%,100% 0%,100% 100%,0% 100%,0% 10%);
     clip-path: polygon(10% 0%,100% 0%,100% 100%,0% 100%,0% 10%);
     
-   
+    &:hover{
+      margin-left: 0;
+      margin-top: 0;
+    }
   `
 
 export const CharacterButton = styled.button`
@@ -123,7 +150,22 @@ export const CharacterButton = styled.button`
     height: 100%;
   }
 `
-export const SocialMidiaContainer = styled.div``
+export const SocialMidiaContainer = styled.div`
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 14rem;
+  height: 100%;
+
+  
+  a:not(:first-child) {
+    margin-left: 6rem;
+  }
+
+  a:hover{
+    filter: opacity(0.5);
+  }
+`
 
 export const RightContainer = styled.div`
   display: flex; 

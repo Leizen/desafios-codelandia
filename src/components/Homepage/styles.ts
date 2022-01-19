@@ -67,7 +67,7 @@ export const ChallengesList = styled.ul`
       text-decoration: none;
       color: #FFF;
 
-      :hover{
+      a:hover{
         filter: opacity(0.2)
       }
     }

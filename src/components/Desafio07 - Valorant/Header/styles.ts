@@ -17,4 +17,7 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     padding: 2rem;
   }
+  a:hover{
+    filter: opacity(0.5);
+  }
 `
